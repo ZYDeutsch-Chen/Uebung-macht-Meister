@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>至元德语 - 五位造句练习</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>至元德语 - 五位造句练习</h1>
+        </div>
+        
+        <div class="cards-container">
+            <div class="card card-0">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-content">我经常想念我的家人。</div>
+                        <button class="hint-btn" onclick="showHint()">提示</button>
+                        <div class="hint-message" id="hintMessage"></div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-content">Oft denke ich an meine Familie.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card card-1" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-number">1</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="model-part">oft</div>
+                        <div class="watermark">1</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card card-2" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-number">2</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="model-part">denke</div>
+                        <div class="watermark">2</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card card-3" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-number">3</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="model-part">ich</div>
+                        <div class="watermark">3</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card card-4" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-number">4</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="model-part">-</div>
+                        <div class="watermark">4</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card card-5" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="card-number">5</div>
+                    </div>
+                    <div class="card-back">
+                        <div class="model-part">an meine Familie.</div>
+                        <div class="watermark">5</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <button class="btn btn-answer" onclick="flipAllCards()">看答案</button>
+            <button class="btn btn-reset" onclick="resetAllCards()">重试</button>
+            <button class="btn btn-switch" onclick="switchExample()">下一句</button>
+        </div>
+        
+        <div class="example-indicator">例句 1/10</div>
+        
+        <div class="instructions">
+            <h2>如何使用造句器</h2>
+            <ol>
+                <li>阅读中文句子</li>
+                <li>按照5位模型造句</li>
+                <li>依次点击卡片验证</li>
+                <li>不会造句-点击"看答案"</li>
+                <li>重新尝试-点击"重试"</li>
+                <li>完成造句-点击"下一句"</li>
+            </ol>
+        </div>
+        
+        <div class="copyright">
+            <span class="copyright-line">仅至元德语内部学员使用</span>
+            <span class="copyright-line">未经同意请勿转发和商用</span>
+        </div>
+    </div>
+    
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
